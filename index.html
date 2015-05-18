@@ -1,21 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Tom Glenn</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
-</head>
-<body ng-app="mainApp">
-  <div class="container" ng-controller="mainController">
-    <h1>Welcome</h1>
-    <p class="lead">I've decided that today you can be a {{animal}}!</p>
-    <p>Not sure? Fine, refresh the page and I'll pick you something else... pft!</p>
-  </div>
-
+  <link rel="stylesheet" href="/css/font-awesome.min.css" />
   <script src="/js/angular.min.js"></script>
   <script src="/js/main.js"></script>
+</head>
+<body ng-app="mainApp">
+  <div class="jumbotron">
+    <div class="container text-center" ng-controller="mainController">
+      <img src="http://www.gravatar.com/avatar/f929125ca839b27d0ee3a24cbbddbdd7.jpg?s=128" class="img-circle" />
+      <h1>
+        <small>Oh hi...</small><br />
+        I'm Tom!
+      </h1>
+      <p class="lead">Since you're here, why not let me tell you a bit about myself.</p>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="well">
+          <i class="fa fa-code fa-4x"></i>
+          <h2>Software Developer</h2>
+          <p class="lead">I write code!</p>
+          <p>Specializing in C#, I also have experience with Javascript, C++, Objective-C and 3D technologies such as Unity and Unreal Engine.</p>
+          <p>Why not check out my <strong><a href="http://github.com/tomeglenn">GitHub</a></strong>.
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="well">
+          <i class="fa fa-heartbeat fa-4x"></i>
+          <h2>Fitness Junky</h2>
+          <p class="lead">I like to keep fit!</p>
+          <p>Although my fitness levels tend to resemble a yo-yo, I do what I can to stay in relatively good shape.</p>
+          <p>If you need some healthy food inspiration take a look at my <strong><a href="http://instagram.com/tomeglenn">Instagram</a></strong>.
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="well">
+          <i class="fa fa-male fa-4x"></i>
+          <h2>Daddy</h2>
+          <p class="lead">&ldquo;It&#39;s a boy!&rdquo;</p>
+          <p>I&#39;m the proud father of a gorgeous boy called Max Holmes Glenn who was born on <strong>19th December 2015</strong>.</p>
+          <p>Max and his mummy are my absolute world!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <footer class="footer">
+    <div class="container text-center text-muted">
+      <p>Designed and built by <a href="http://github.com/tomeglenn">Tom Glenn</a></p>
+      <p>Proudly built with <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.github.io">Font Awesome</a> and <a href="http://angularjs.org">AngularJS</a>.</p>
+    </div>
+  </footer>
 </body>
 </html>
